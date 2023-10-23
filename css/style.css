@@ -106,6 +106,10 @@ body {
 	letter-spacing: .03em;
 }
 
+.footer-bg {
+	background-color: #377386;
+}
+
 @media (min-width: 768px) {
 	body {
 		font-size: 16px;
@@ -9106,7 +9110,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .loadingProgressG {
-	background: #007bff;
+	background: #377386;
 	margin-top: 0;
 	margin-left: -100vw;
 	animation-name: bounce_loadingProgressG;
@@ -11079,6 +11083,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-aside {
 	display: flex;
 	align-items: center;
+	
 	justify-content: space-between;
 	padding: 30px 0 40px;
 }

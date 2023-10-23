@@ -16,7 +16,7 @@
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
-      <div class="preloader-logo"><img src="https://archstonekenya.com/img/final6.jpg" alt="" width="151" height="44" srcset="https://archstonekenya.com/img/final6.jpg"/>
+    <div class="preloader-logo"><img src="images/archstone_logo.png" alt="" width="151" height="44" srcset="images/archstone_logo.png"/>
       </div>
       <div class="preloader-body">
         <div id="loadingProgressG">
@@ -25,64 +25,9 @@
       </div>
     </div>
     <div class="page">
-      <!-- Page Header<a class="banner banner-top" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_02.jpg" alt=""/></a> -->
-      <header class="section novi-background page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
-            <div class="rd-navbar-aside-outer">
-              <div class="rd-navbar-aside">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="https://archstonekenya.com/img/final6.jpg" alt="" width="151" height="44" srcset="https://archstonekenya.com/img/final6.jpg"/></a>
-                </div>
-                <div class="rd-navbar-collapse">
-                  <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
-                  <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
-                    <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-phone"></span></div>
-                      <div class="unit-body">
-                        <ul class="list-0">
-                          <ul class="list-0">
-                            <li><a class="link-default" href="tel:#">+254 720 134 987</a></li>
-                            <li><a class="link-default" href="tel:#">+254 788 431 125</a></li>
-                          </ul>
-                        </ul>
-                      </div>
-                    </article>
-                    <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker"></span></div>
-                      <div class="unit-body"><a class="link-default" href="tel:#">Pan African Insurance Ave, <br> Nairobi</a></div>
-                    </article><a class="button button-gray-bordered button-winona" href="#">Request a call</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
-                  <!-- RD Navbar Nav-->
-                  <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Buy</a>
-                    </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Rent</a>
-                    </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="about-us.html">About us</a>
-                    </li>
-                    
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+      
+      <?php include('header.php'); ?>
+
       <!-- Breadcrumbs -->
       <section class="section novi-background breadcrumbs-custom bg-image context-dark" style="background-image: url(https://images.pexels.com/photos/7018392/pexels-photo-7018392.jpeg);">
         <div class="breadcrumbs-custom-inner">
@@ -92,7 +37,7 @@
               <h2 class="text-uppercase breadcrumbs-custom-title">Contacts</h2>
             </div>
             <ul class="breadcrumbs-custom-path">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li class="active">Contacts</li>
             </ul>
           </div>
@@ -189,93 +134,7 @@
         </div>
       </section>
       <!-- Page Footer<a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a> -->
-      <footer class="section novi-background footer-advanced bg-gray-700">
-        <div class="footer-advanced-main">
-          <div class="container">
-            <div class="row row-50">
-              <div class="col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">About Us</h5>
-                <p class="footer-advanced-text">inHouse is the largest full-service real estate and property management company. We offer expertise in the marketing and sale of a wide range of properties, including residential real estate, farms and lifestyle blocks, as well as commercial and industrial properties that we hope may interest you.</p>
-              </div>
-              <!-- <div class="col-sm-7 col-md-5 col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">Recent Blog Posts</h5>
-                
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Real Estate Guide: 7 Important Tips for Buying a Home</a></p>
-                  <ul class="post-inline-meta">
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
-                  </ul>
-                </article>
-                
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Single-Family Homes as a Housing Option for Young Families</a></p>
-                  <ul class="post-inline-meta"> 
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
-                  </ul>
-                </article>
-              </div> -->
-              <div class="col-sm-5 col-md-7 col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">Gallery</h5>
-                <div class="row row-x-10" data-lightgallery="group">
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/RD1.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/lvv.jpeg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/DOC1..jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/propM29.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/RD1.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/Simon3.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"> </div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/NYA1.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="http://archstonekenya.com/images/fulls/IMG-20230416-WA0000.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-advanced-aside">
-          <div class="container">
-            <div class="footer-advanced-layout">
-              <div>
-                <ul class="list-nav"> 
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Buy</a></li>
-                  <li><a href="#">Rent</a></li>
-                  <li><a href="about-us.html">About</a></li>
-                  <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul class="foter-social-links list-inline list-inline-md">
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-twitter" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-google" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <hr>
-        </div>
-        <div class="footer-advanced-aside">
-          <div class="container">
-            <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="https://archstonekenya.com/img/final6.jpg" alt="" width="115" height="34" srcset="images/logo-light-115x34.png 2x"/></a>
-              <!-- Rights-->
-              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <?php include('footer.php'); ?>
 </div>
 <!-- Global Mailform Output-->
 <div class="snackbars" id="form-output-global"></div>

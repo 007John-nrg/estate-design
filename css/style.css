@@ -541,6 +541,99 @@ html .page .text-primary {
 	color: #fff;
 }
 
+/*==================
+	ADVANCE SEARCH SECTION
+====================*/
+
+#aa-advance-search {
+	display: inline;
+	float: left;
+	width: 100%;
+  }
+  #aa-advance-search .aa-advance-search-area {
+	background-color: rgba(221, 221, 221, 0.8);
+	border-radius: .7rem;
+	display: inline;
+	float: left;
+	margin-top: -85px;
+	min-height: 200px;
+	padding: 25px 20px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-top {
+	display: inline;
+	float: left;
+	width: 100%;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search {
+	display: inline;
+	float: left;
+	width: 100%;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search input[type="text"] {
+	border: 1px solid #fff;
+	border-radius: 2px;
+	color: #555;
+	height: 40px;
+	padding: 5px;
+	width: 100%;
+	font-size: 18px;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search select {
+	border: 1px solid #fff;
+	border-radius: 2px;
+	color: #555;
+	height: 40px;
+	padding: 5px;
+	width: 100%;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search .aa-search-btn {
+	border: medium none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	height: 40px;
+	outline: medium none;
+	text-transform: uppercase;
+	width: 100%;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom {
+	display: inline;
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search {
+	display: inline;
+	float: left;
+	width: 100%;
+	text-align: center;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search span {
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+	margin: 0 10px;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search .noUi-connect {
+	box-shadow: 0 0 3px rgba(51, 51, 51, 0.45) inset;
+	transition: background 450ms ease 0s;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search .noUi-handle {
+	border: none;
+	border-radius: 50%;
+	box-shadow: none;
+	height: 25px;
+	left: -17px;
+	top: -12px;
+	width: 25px;
+  }
+  #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search .noUi-handle:after, #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search .noUi-handle:before {
+	display: none;
+  }
+
 /*
 *
 * Brand
@@ -571,6 +664,8 @@ a, a:focus, a:active, a:hover {
 
 a, a:focus, a:active {
 	color: #007bff;
+	color: #377386;
+	
 }
 
 a:hover {
@@ -586,11 +681,11 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .link-default, .link-default:active, .link-default:focus {
-	color: #74757f;
+	color: #111;
 }
 
 .link-default:hover {
-	color: #007bff;
+	color: #377386;
 }
 
 .context-dark .link-default, .bg-gray-700 .link-default, .bg-gray-800 .link-default, .bg-primary .link-default, .bg-primary-darker .link-default {
@@ -2074,8 +2169,8 @@ button {
 
 .button.button-primary, .button.button-primary:focus {
 	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff;
+	background-color: #377386;	
+	border-color: #377386;
 }
 
 .button.button-primary:hover, .button.button-primary:active {
@@ -2190,6 +2285,12 @@ html .button.button-primary-lighten:hover, html .button.button-primary-lighten:a
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.button-winona:hover {
+	background-color: #377386;	
+	border: #377386;
+	color: #fff;
 }
 
 .button-winona .content-original,
@@ -8402,7 +8503,6 @@ html [class*='section-'].section-bottom-0 {
 */
 .bg-gray-700 {
 	color: #aeb1be;
-	background-color: #232426;
 }
 
 .bg-gray-700 a {
@@ -11165,7 +11265,8 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-corporate.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main-outer, .rd-navbar-corporate.rd-navbar-static.rd-navbar--is-clone .rd-navbar-main-outer {
-	background: #232426;
+	
+	background-color: #377386;	
 	box-shadow: 0 5px 10px 0px rgba(20, 20, 28, 0.3);
 }
 
@@ -17779,3 +17880,4 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 		display: none;
 	}
 }
+

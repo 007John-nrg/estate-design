@@ -1,11 +1,12 @@
 
-       <footer class="section novi-background footer-advanced bg-gray-700">
+       <!-- <footer class="section novi-background footer-advanced bg-gray-700"> -->
+       <footer class="section novi-background footer-advanced bg-gray-700" style="background-color:black;background: linear-gradient(to bottom right, #287087 0%, #0d2d37 59%)">
               <div class="footer-advanced-main">
                 <div class="container">
                   <div class="row row-50">
                     <div class="col-lg-4">
                       <h5 class="font-weight-bold text-uppercase text-white">About Us</h5>
-                      <p class="footer-advanced-text">inHouse is the largest full-service real estate and property management company. We offer expertise in the marketing and sale of a wide range of properties, including residential real estate, farms and lifestyle blocks, as well as commercial and industrial properties that we hope may interest you.</p>
+                      <p class="footer-advanced-text text-white">We give you the best in the market right from Renting, Selling and Property management. You are rest assured even outside the country that your property is in good hands and managed by a team of professionals.</p>
                     </div>
               
                     <div class="col-sm-5 col-md-7 col-lg-4">
@@ -37,11 +38,11 @@
                   <div class="footer-advanced-layout">
                     <div>
                       <ul class="list-nav"> 
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Buy</a></li>
-                        <li><a href="#">Rent</a></li>
-                        <li><a href="about-us.html">About</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="buy.php">Buy</a></li>
+                        <li><a href="rent.php">Rent</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="contacts.php">Contacts</a></li>
                       </ul>
                     </div>
                     <div>

@@ -102,8 +102,8 @@
           <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
             <div class="col-md-10 col-lg-6 col-xl-5">
               <h3 class="text-uppercase">Who We Are</h3>
-              <p class="about-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru eiusmod tempor incididunt ut labore et.</p><a class="button button-lg button-primary button-winona" href="about-us.html">View properties</a>
+              <p class="about-subtitle">we are a dedicated team of experienced real estate professionals,commited to helping you find your dream home or sell your property with confidence .our mission is to provide expert guidance and personalized solutions to make your real estate journey a satisfactory one</p>
+              <a class="button button-lg button-primary button-winona" href="properties.php">View properties</a>
             </div>
             <div class="col-md-10 col-lg-6 col-xl-6"><img class="img-responsive" src="https://images.pexels.com/photos/7018391/pexels-photo-7018391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="570" height="388"/>
             </div>
@@ -114,7 +114,7 @@
       <section class="section novi-background section-md text-center bg-gray-100">
         <div class="container">
           <h3 class="text-uppercase wow-outer"><span class="wow slideInUp">Why people Choose Us</span></h3>
-          <p class="wow-outer"><span class="text-width-1 wow slideInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
+          <p class="wow-outer"><span class="text-width-1 wow slideInDown">we walk with you from house hunting to hand holding and hand over.</span></p>
           <div class="row row-50">
             <div class="col-6 col-md-3 wow-outer">
               <!-- Counter Minimal-->

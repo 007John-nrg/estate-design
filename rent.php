@@ -16,9 +16,6 @@ if (!mysqli_select_db($conn, 'archtest')) {
   die("Oops database selection problem ! --> " . mysqli_connect_error());
 }
 
-// Create an SQL query to fetch properties
-$sql = "SELECT * FROM properties";
-$result = $conn->query($sql);
 ?>
 
 
@@ -57,56 +54,134 @@ $result = $conn->query($sql);
       <section class="section novi-background section-md text-center">
         <div class="container">
           <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">properties for rent</span></h3>
+
           <div class="row row-lg-50 row-35 offset-top-2">
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
+        
+            <?php    
+              if(isset($_POST['filter']))
+              {
+                $filter = $_POST['filter'];
+                $result = mysqli_query($conn, "SELECT * FROM property where rooms like '%$filter%' or Category like '%$filter%' or location like '%$filter%' or price like '%$filter%' or propertytype like '%$filter%' ");
+                          
+              } else {
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+                $limit = 9;
+                $offset = ($page - 1) * $limit;
+
+                // $result = mysqli_query($conn, "SELECT * FROM property where id not in('139','138','136','165') and not status ='Unavailable'  ORDER BY  indexp DESC LIMIT $page1,9 ");
+                $result = mysqli_query($conn, "SELECT * FROM property WHERE category = 'Rental' AND status = 'Available' LIMIT $limit OFFSET $offset;");
+              }
+                
+              if($result){        
+              while($row=mysqli_fetch_array($result)){
+
+                $description = $row['Description'];
+                $periodPos = strpos($description, '.');
+                if ($periodPos !== false) {
+                  $description = substr($description, 0, $periodPos + 1);
+                }
+                
+              $prodID = $row["ID"];
+                echo '<div class="col-md-4 wow-outer">';
+                echo '<article class="post-modern wow slideInLeft"><a class="post-modern-media" href="details.php"><img src="https://archstonekenya.com/images/fulls/'.$row['imgUrl'].'" alt="" width="571" height="353"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">'.$row['location'].'</a></h4>
+                <ul class="post-modern-meta">
+                  <li><a class="button-winona" href="#">'.$row['Price'].'</a></li>
+                  <li>'.$row['rooms'].' Bedrooms</li>
+                </ul>
+                <p>' . $description . '</p>
+                </article>';
+                echo '</div>'; 
+              }
+             }
+            ?>
+          </div>
+
+          <!-- <div class="row row-lg-50 row-35 offset-top-2">
+            <div class="col-md-4 wow-outer">
+              
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="https://archstonekenya.com/images/fulls/liv11.jpg.jpeg" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Lower Kabete</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">Ksh-125 million</a></li>
-                  <!-- <li>30 Sq. Ft.</li> -->
+                  
                   <li>5 Bedrooms</li>
                 </ul>
                 <p>Very beautiful 5 bedroom with and an extra room on the lower floor house in a gated community</p>
               </article>
             </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
+            <div class="col-md-4 wow-outer">
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="http://archstonekenya.com/images/fulls/WhatsApp%20Image%202020-06-08%20at%2010.52.36%20(1).jpeg" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Ridgeways</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">$1300/mon</a></li>
-                  <!-- <li>40 Sq. Ft.</li> -->
                   <li>4 Bedrooms</li>
                 </ul>
                 <p>Well finished four bedroom townhouse in a gated community with a study room</p>
               </article>
             </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
+            <div class="col-md-4 wow-outer">
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="http://archstonekenya.com/images/fulls/Ben1.webp" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Lavington</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">Ksh-340,000/mon</a></li>
-                  <!-- <li>50 Sq. Ft.</li> -->
                   <li>5 Bedrooms</li>
                 </ul>
                 <p>5 bedroom all ensuite spacious house in a compound of two houses</p>
               </article>
             </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
+            <div class="col-md-4 wow-outer">
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="https://archstonekenya.com/images/fulls/Living.jpeg" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Rossyln</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">Ksh-410,000/mon</a></li>
-                  <!-- <li>90 Sq. Ft.</li> -->
                   <li>5 Bedrooms</li>
                 </ul>
                 <p>In Rosslyn 5 bedroom all ensuite Villa in a gated community, Has its private gate.</p>
               </article>
             </div>
-            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view More properties</a></div>
+            <div class="col-md-4 wow-outer">
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="http://archstonekenya.com/images/fulls/Ben1.webp" alt="" width="571" height="353"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Lavington</a></h4>
+                <ul class="post-modern-meta">
+                  <li><a class="button-winona" href="#">Ksh-340,000/mon</a></li>
+                  <li>5 Bedrooms</li>
+                </ul>
+                <p>5 bedroom all ensuite spacious house in a compound of two houses</p>
+              </article>
+            </div>
+            <div class="col-md-4 wow-outer">
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="https://archstonekenya.com/images/fulls/Living.jpeg" alt="" width="571" height="353"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Rossyln</a></h4>
+                <ul class="post-modern-meta">
+                  <li><a class="button-winona" href="#">Ksh-410,000/mon</a></li>
+                  <li>5 Bedrooms</li>
+                </ul>
+                <p>In Rosslyn 5 bedroom all ensuite Villa in a gated community, Has its private gate.</p>
+              </article>
+            </div> -->
+
+            <!--             
+            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view More properties</a></div> -->
+          </div>
+
+          <div class="container">
+            <?php
+              $result = mysqli_query($conn, "SELECT * FROM property WHERE category = 'Rental' AND status = 'Available' ;");
+              $cou = mysqli_num_rows($result);
+              $a = $cou/9;
+              $a=ceil($a);
+                echo "<br>";
+              echo "<br>";
+              echo "<br>";
+              echo "<br/>";
+              for ($b=1; $b<=$a ; $b++) { 
+
+              ?>
+              <a href="rent.php?page=<?php echo $b;?>" style="background-color:#377386; color:#fff; padding:8px; text-align:center; border-radius: .5rem; "><?php echo "\n\n".$b."";  ?></a> &nbsp;&nbsp;<?php
+              }
+
+            ?>
           </div>
         </div>
       </section>

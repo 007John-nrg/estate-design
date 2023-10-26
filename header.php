@@ -25,7 +25,7 @@
                     </article>
                     <article class="unit align-items-center">
                       <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker"></span></div>
-                      <div class="unit-body"><a class="link-default" href="tel:#">Pan African Insurance Ave, <br> Nairobi</a></div>
+                      <div class="unit-body"><a class="link-default" href="tel:#">Pan African Insurance Lane, <br> Nairobi</a></div>
                     </article><a class="button button-gray-bordered button-winona" href="#">Request a call</a>
                   </div>
                 </div>
@@ -36,11 +36,11 @@
                 <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="buy.php">Buy</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="buy.php">Buy</a>
                     </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="rent.php">Rent</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="rent.php">Rent</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="about.php">About us</a>
                     </li>

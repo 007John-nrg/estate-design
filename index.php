@@ -34,8 +34,29 @@ $result = $conn->query($sql);
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $( "#slider-range" ).slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [ 100, 300 ],
+          slide: function( event, ui ) {
+            $( "#amount" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        $( "#amount1" ).val(ui.values[ 0 ]);
+        $( "#amount2" ).val(ui.values[ 1 ]);
+          }
+        });
+        $( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+      });
+    </script>
+  
   </head>
   <body>
     <!--onloading -->
@@ -98,11 +119,198 @@ $result = $conn->query($sql);
           <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
         </div>
       </section>
+
+
+
+      <section id="aa-advance-search">
+        <div class="container">
+          <div class="aa-advance-search-area">
+            <div class="form">
+            <div class="aa-advance-search-top">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="aa-single-advance-search">
+                      <input type="text" placeholder="Type Location">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="aa-single-advance-search">
+                      <select>
+                       <!-- <option value="0" selected>Category</option> -->
+                        <option value="1">For sale</option>
+                        <option value="2">For rent</option>
+                        <!-- <option value="3">Plot</option>
+                        <option value="4">Commercial</option> -->
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="aa-single-advance-search">
+                      <select>
+                        <option value="0" selected>Bedrooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="4">5</option>
+                        <option value="4">6</option>
+                        <option value="4">7</option>
+                      </select>
+                  </div>
+                  </div>
+                  <!-- <div class="col-md-2">
+                    <div class="aa-single-advance-search">
+                      <select>
+                        <option value="0" selected>Type</option>
+                        <option value="1">Flat</option>
+                        <option value="2">Land</option>
+                        <option value="3">Plot</option>
+                        <option value="4">Commercial</option>
+                      </select>
+                  </div>
+                  </div> -->
+                  <div class="col-md-3">
+                    <div class="aa-single-advance-search">
+                      <a class="button button-primary button-winona button-md" href="#">Search</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="aa-advance-search-bottom">
+              <div class="row">
+                <!-- <div class="col-md-6">
+                  <div class="aa-single-filter-search">
+                    <span>AREA (SQ)</span>
+                    <span>FROM</span>
+                    <span id="skip-value-lower" class="example-val">30.00</span>
+                    <span>TO</span>
+                    <span id="skip-value-upper" class="example-val">100.00</span>
+                    <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                    </div>                  
+                  </div>
+                </div> -->
+                <div class="col-md-6">
+                  <div class="aa-single-filter-search">
+                    <span>PRICE RANGE</span>
+                    <span>FROM</span>
+                    <span id="skip-value-lower2" class="example-val">Ksh.0</span>
+                    <span>TO</span>
+                    <span id="skip-value-upper2" class="example-val">Ksh.1,000,000,000</span>
+                    <!-- <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                    </div>       -->
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="ftco-section">
+<div class="container-xl">
+<div class="row justify-content-center">
+
+<div class="col-md-10">
+<div class="row">
+<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+<ul class="places-list">
+<li>
+<a href="#">
+New York
+<span>200 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+London
+<span>100 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+Chicago
+<span>120 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+Illinois
+<span>300 Properties</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+<ul class="places-list">
+<li>
+<a href="#">
+California
+<span>100 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+Tennessee
+<span>200 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+Texas
+<span>200 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+North Carolina
+<span>200 Properties</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+<ul class="places-list">
+<li>
+<a href="#">
+Florida
+<span>422 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+Charlotte
+<span>200 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+Orlando
+<span>200 Properties</span>
+</a>
+</li>
+<li>
+<a href="#">
+Atlanta
+<span>200 Properties</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
       <section class="section novi-background section-md text-center">
         <div class="container">
-          <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Popular properties</span></h3>
+          <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Featured properties</span></h3>
           <div class="row row-lg-50 row-35 offset-top-2">
-            <div class="col-md-6 wow-outer">
+            <div class="col-md-4 wow-outer">
               <!-- Post Modern-->
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="https://archstonekenya.com/images/fulls/liv11.jpg.jpeg" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Lower Kabete</a></h4>
@@ -114,7 +322,7 @@ $result = $conn->query($sql);
                 <p>Very beautiful 5 bedroom with and an extra room on the lower floor house in a gated community</p>
               </article>
             </div>
-            <div class="col-md-6 wow-outer">
+            <div class="col-md-4 wow-outer">
               <!-- Post Modern-->
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="http://archstonekenya.com/images/fulls/WhatsApp%20Image%202020-06-08%20at%2010.52.36%20(1).jpeg" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Ridgeways</a></h4>
@@ -126,7 +334,7 @@ $result = $conn->query($sql);
                 <p>Well finished four bedroom townhouse in a gated community with a study room</p>
               </article>
             </div>
-            <div class="col-md-6 wow-outer">
+            <div class="col-md-4 wow-outer">
               <!-- Post Modern-->
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="http://archstonekenya.com/images/fulls/Ben1.webp" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Lavington</a></h4>
@@ -138,7 +346,7 @@ $result = $conn->query($sql);
                 <p>5 bedroom all ensuite spacious house in a compound of two houses</p>
               </article>
             </div>
-            <div class="col-md-6 wow-outer">
+            <div class="col-md-4 wow-outer">
               <!-- Post Modern-->
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="https://archstonekenya.com/images/fulls/Living.jpeg" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">Rossyln</a></h4>
@@ -150,7 +358,31 @@ $result = $conn->query($sql);
                 <p>In Rosslyn 5 bedroom all ensuite Villa in a gated community, Has its private gate.</p>
               </article>
             </div>
-            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="properties.php">view More properties</a></div>
+            <div class="col-md-4 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="http://archstonekenya.com/images/fulls/Ben1.webp" alt="" width="571" height="353"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Lavington</a></h4>
+                <ul class="post-modern-meta">
+                  <li><a class="button-winona" href="#">Ksh-340,000/mon</a></li>
+                  <!-- <li>50 Sq. Ft.</li> -->
+                  <li>5 Bedrooms</li>
+                </ul>
+                <p>5 bedroom all ensuite spacious house in a compound of two houses</p>
+              </article>
+            </div>
+            <div class="col-md-4 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="https://archstonekenya.com/images/fulls/Living.jpeg" alt="" width="571" height="353"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Rossyln</a></h4>
+                <ul class="post-modern-meta">
+                  <li><a class="button-winona" href="#">Ksh-410,000/mon</a></li>
+                  <!-- <li>90 Sq. Ft.</li> -->
+                  <li>5 Bedrooms</li>
+                </ul>
+                <p>In Rosslyn 5 bedroom all ensuite Villa in a gated community, Has its private gate.</p>
+              </article>
+            </div>
+            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view More properties</a></div>
           </div>
         </div>
       </section>
@@ -183,7 +415,7 @@ $result = $conn->query($sql);
                 <div class="box-chloe__icon novi-icon linearicons-star wow fadeIn" data-wow-delay=".2s"></div>
                 <div class="box-minimal-main wow-outer">
                   <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".2s">100% Guaranteed</h4>
-                  <p class="wow fadeInUpSmall" data-wow-delay=".2s">All the results that you get from our realtors are 100% guaranteed to offer you the best choice of properties throughout the USA.</p>
+                  <p class="wow fadeInUpSmall" data-wow-delay=".2s">All the results that you get from our realtors are 100% guaranteed to offer you the best choice of properties.</p>
                 </div>
               </article>
             </div>
@@ -233,5 +465,6 @@ $result = $conn->query($sql);
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/slider.js"></script> -->
   </body>
 </html>

@@ -57,7 +57,7 @@ $result = $conn->query($sql);
       
       <section class="section novi-background section-md text-center">
         <div class="container">
-          <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">properties for sale</span></h3>
+          <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Featured properties</span></h3>
           <div class="row row-lg-50 row-35 offset-top-2">
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->

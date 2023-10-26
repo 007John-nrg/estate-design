@@ -133,7 +133,7 @@
           </div>
         </div>
       </section>
-      <!-- Page Footer<a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a> -->
+      
       <?php include('footer.php'); ?>
 </div>
 <!-- Global Mailform Output-->

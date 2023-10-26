@@ -209,6 +209,34 @@ $result = $conn->query($sql);
         </div>
       </section>
 
+      <!-- SELECT location, COUNT(*) AS occurrences FROM property GROUP BY location ORDER BY occurrences DESC; -->
+
+      <?php
+        $result = mysqli_query($conn, "SELECT location, COUNT(*) AS occurrences FROM property GROUP BY location ORDER BY occurrences DESC;");
+  
+        while($row=mysqli_fetch_array($result)) {}
+        foreach ($data as $row) {
+          $html .= '<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">';
+          $html .= '<ul class="places-list">';
+          $html .= '<li><a href="#">' . $row['location'] . ' <br/><span>' . $row['occurrences'] . ' Properties</span></a></li>';
+          $html .= '</ul>';
+          $html .= '</div>';
+        }
+
+        echo $html;
+      ?>
+
+      <section class="ftco-section">
+        <div class="container-xl">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section class="ftco-section">
         <div class="container-xl">
           <div class="row justify-content-center">

@@ -81,7 +81,7 @@ if (!mysqli_select_db($conn, 'archtest')) {
                   $description = substr($description, 0, $periodPos + 1);
                 }
                 
-              $prodID = $row["ID"];
+              // $prodID = $row["ID"];
                 echo '<div class="col-md-4 wow-outer">';
                 echo '<article class="post-modern wow slideInLeft"><a class="post-modern-media" href="details.php"><img src="https://archstonekenya.com/images/fulls/'.$row['imgUrl'].'" alt="" width="571" height="353"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">'.$row['location'].'</a></h4>

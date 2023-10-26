@@ -633,6 +633,40 @@ html .page .text-primary {
   #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search .noUi-handle:after, #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search .noUi-handle:before {
 	display: none;
   }
+  /*places*/
+
+  .places-list {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.places-list li {
+    list-style: none;
+    display: block;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.places-list li a {
+    color: #000000;
+    display: inline-block;
+    font-weight: 700;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.places-list li a span {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #377386;
+    text-decoration: none;
+}
 
 /*
 *

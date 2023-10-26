@@ -38,7 +38,8 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript">
       $(function() {
         $( "#slider-range" ).slider({
@@ -208,102 +209,64 @@ $result = $conn->query($sql);
         </div>
       </section>
 
-
       <section class="ftco-section">
-<div class="container-xl">
-<div class="row justify-content-center">
-
-<div class="col-md-10">
-<div class="row">
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-<ul class="places-list">
-<li>
-<a href="#">
-New York
-<span>200 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-London
-<span>100 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-Chicago
-<span>120 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-Illinois
-<span>300 Properties</span>
-</a>
-</li>
-</ul>
-</div>
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-<ul class="places-list">
-<li>
-<a href="#">
-California
-<span>100 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-Tennessee
-<span>200 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-Texas
-<span>200 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-North Carolina
-<span>200 Properties</span>
-</a>
-</li>
-</ul>
-</div>
-<div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-<ul class="places-list">
-<li>
-<a href="#">
-Florida
-<span>422 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-Charlotte
-<span>200 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-Orlando
-<span>200 Properties</span>
-</a>
-</li>
-<li>
-<a href="#">
-Atlanta
-<span>200 Properties</span>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <div class="container-xl">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                  <ul class="places-list">
+                    <li>
+                      <a href="#">Runda <br/><span>200 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>100 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>120 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>300 Properties</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                  <ul class="places-list">
+                    <li>
+                      <a href="#">Runda <br/><span>100 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>200 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>200 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>200 Properties</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                  <ul class="places-list">
+                    <li>
+                      <a href="#">Runda <br/><span>422 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>200 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>200 Properties</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Runda <br/><span>200 Properties</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <section class="section novi-background section-md text-center">
